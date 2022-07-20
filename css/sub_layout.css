@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import "reset.css";
+
+/*header영역-------------------------------------------------*/
+#header_sub{
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    position: fixed;
+    z-index: 999;
+    background: #fff;
+}
+
+#header_sub .inner{
+    width: 100%; height: 80px; 
+    position: relative;
+}
+
+#header_sub .inner h1{
+    position: absolute;
+    left: 60px; bottom: 15px;
+}
+
+#header_sub .inner h1 a{
+    font:bold 35px/1 'arial'; color: #444;
+}
+
+#header_sub .inner #gnb{
+    position: absolute;
+    left:180px ; bottom: 13px;
+}
+
+#header_sub .inner #gnb li{
+    float: left;
+}
+
+#header_sub .inner #gnb li a{
+    display: block;
+    padding: 14px 35px; 
+    font: bold 17px/1 'arial';
+    color: #777;
+
+}
+
+#header_sub .inner #gnb li a:hover{
+    color: rgb(125, 152, 69);
+}
+
+#header_sub .inner .util{
+    position: absolute;
+    top: 30px; right: 0px;
+}
+
+#header_sub .inner .util li{
+    float: left; margin-left: 20px;
+}
+
+#header_sub .inner .util li:nth-child(4){
+    margin-left: 80px;
+}
+
+#header_sub .inner .util li a{
+    font: 14px/1 'arial'; color:#444;
+}
+
+#header_sub .inner .util li i{
+    transform: scale(1.3);
+}
+/
+
+/* content -------------------------------------------------- */
+.content {
+	width: 100%;
+	padding: 0px 0 150px;
+}
+
+.content .sub_visual {
+	width: 100%;
+	height: 250px;
+	background: #bbb;
+	margin-bottom: 100px;
+}
+
+.content .inner {
+	width: 1180px;
+	min-height: 500px;
+	margin: 0 auto;
+}
+.content .inner h1 {
+	font: normal 50px/1 "arial";
+	color: #000;
+}
+.content .inner h1 span {
+	font: normal 20px/1 "맑은 고딕";
+	color: #aaa;
+}
+.content .inner h1 span::before {
+	content: "/";
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+/*footer-------------------------------------------------------------------------------*/
+
+#footer_sub{
+    width: 100%; height: 310px;
+    background: #ededed;
+}
+#footer_sub .inner{
+    width: 1180px;
+    position: relative;
+    color: #999;
+}
+#footer_sub .inner .footerLogo{
+    position: absolute;
+    top: 0; left: 0;
+    padding: 80px;
+    font:bold 40px/1.2 '맑은고딕';
+    
+}
+#footer_sub .inner ul{
+    position: absolute;
+    top: 70px; left: 210px;
+}
+#footer_sub .inner ul::after{
+    content: ''; display: block; clear: both;
+}
+#footer_sub .inner ul li{
+    float: left;
+    border-right: 2px solid #555;
+    padding: 0px 15px;
+}
+#footer_sub .inner ul li:first-child{
+    padding-left: 0;
+}
+#footer_sub .inner ul li:last-child{
+    border-right: none;
+}
+#footer_sub .inner ul li a{
+    font: 15px/1 '맑은고딕';
+    color: #999;
+}
+
+#footer_sub .inner .footerInfo{
+    position: absolute;
+    top: 120px; left: 210px
+}
+#footer_sub .inner .footerInfo p{
+    font: 13px/1.4 '맑은고딕';
+    padding: 10px 0;
+}
+
+
+}
